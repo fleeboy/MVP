@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Ui-->
@@ -14,9 +15,74 @@
                         <viewControllerLayoutGuide type="bottom" id="RwW-Kd-uSF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Gd-8V-7u7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fO-Lf-8WG">
+                                <rect key="frame" x="84" y="64" width="432" height="408"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-JO-StW">
+                                        <rect key="frame" x="8" y="143" width="416" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IGS-Ic-7jZ">
+                                        <rect key="frame" x="8" y="189" width="416" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-72-ynj">
+                                        <rect key="frame" x="8" y="235" width="416" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Log me in!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJS-XS-dST">
+                                        <rect key="frame" x="195" y="106" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="P4i-JO-StW" secondAttribute="trailing" constant="8" id="0NU-fI-dI9"/>
+                                    <constraint firstItem="ysg-72-ynj" firstAttribute="top" secondItem="IGS-Ic-7jZ" secondAttribute="bottom" constant="16" id="5qG-Nl-Li4"/>
+                                    <constraint firstAttribute="trailing" secondItem="ysg-72-ynj" secondAttribute="trailing" constant="8" id="CBh-8g-6f9"/>
+                                    <constraint firstItem="IGS-Ic-7jZ" firstAttribute="top" secondItem="P4i-JO-StW" secondAttribute="bottom" constant="16" id="EiJ-p2-NKj"/>
+                                    <constraint firstItem="P4i-JO-StW" firstAttribute="leading" secondItem="0fO-Lf-8WG" secondAttribute="leading" constant="8" id="WGN-93-f68"/>
+                                    <constraint firstItem="ysg-72-ynj" firstAttribute="leading" secondItem="0fO-Lf-8WG" secondAttribute="leading" constant="8" id="dwW-Zl-oXu"/>
+                                    <constraint firstItem="IGS-Ic-7jZ" firstAttribute="leading" secondItem="0fO-Lf-8WG" secondAttribute="leading" constant="8" id="fjs-IW-wrz"/>
+                                    <constraint firstItem="P4i-JO-StW" firstAttribute="top" secondItem="lJS-XS-dST" secondAttribute="bottom" constant="16" id="fuN-dq-Zde"/>
+                                    <constraint firstItem="lJS-XS-dST" firstAttribute="centerX" secondItem="0fO-Lf-8WG" secondAttribute="centerX" id="gGL-xv-FGd"/>
+                                    <constraint firstItem="IGS-Ic-7jZ" firstAttribute="centerX" secondItem="0fO-Lf-8WG" secondAttribute="centerX" id="j3h-9R-59D"/>
+                                    <constraint firstItem="IGS-Ic-7jZ" firstAttribute="centerY" secondItem="0fO-Lf-8WG" secondAttribute="centerY" id="qOd-Zx-x5L"/>
+                                    <constraint firstAttribute="trailing" secondItem="IGS-Ic-7jZ" secondAttribute="trailing" constant="8" id="qS2-ih-Lr4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0fO-Lf-8WG" firstAttribute="centerY" secondItem="4Gd-8V-7u7" secondAttribute="centerY" id="JSB-Sf-sIa"/>
+                            <constraint firstItem="RwW-Kd-uSF" firstAttribute="top" secondItem="0fO-Lf-8WG" secondAttribute="bottom" constant="64" id="KiV-ey-vhR"/>
+                            <constraint firstItem="0fO-Lf-8WG" firstAttribute="centerX" secondItem="4Gd-8V-7u7" secondAttribute="centerX" id="Q91-zH-pgT"/>
+                            <constraint firstItem="0fO-Lf-8WG" firstAttribute="top" secondItem="IYD-44-pZB" secondAttribute="bottom" constant="64" id="Y7L-zB-pdw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0fO-Lf-8WG" secondAttribute="trailing" constant="64" id="g7m-us-Fhm"/>
+                            <constraint firstItem="0fO-Lf-8WG" firstAttribute="leading" secondItem="4Gd-8V-7u7" secondAttribute="leadingMargin" constant="64" id="tHe-me-ptp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JSB-Sf-sIa"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jyQ-m2-4hq"/>
                 </viewController>
@@ -29,9 +95,11 @@
             <objects>
                 <navigationController title="Login" automaticallyAdjustsScrollViewInsets="NO" id="sEi-V6-VFy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vBn-oP-fQI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vBn-oP-fQI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

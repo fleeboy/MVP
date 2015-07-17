@@ -15,6 +15,7 @@
 		B699D1BD1B585C63006D23C0 /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D1BC1B585C63006D23C0 /* ui.swift */; };
 		B699D1BF1B585FDD006D23C0 /* router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D1BE1B585FDD006D23C0 /* router.swift */; };
 		B699D1C11B587292006D23C0 /* onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D1C01B587292006D23C0 /* onboarding.swift */; };
+		B69C4BC81B58D7A200DF1F47 /* modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = B69C4BC71B58D7A200DF1F47 /* modules.plist */; };
 		B6BCF5391B517522000DB897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCF5381B517522000DB897 /* AppDelegate.swift */; };
 		B6BCF53E1B517522000DB897 /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BCF53C1B517522000DB897 /* onboarding.storyboard */; };
 		B6BCF5401B517522000DB897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BCF53F1B517522000DB897 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		B699D1BC1B585C63006D23C0 /* ui.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ui.swift; sourceTree = "<group>"; };
 		B699D1BE1B585FDD006D23C0 /* router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = router.swift; sourceTree = "<group>"; };
 		B699D1C01B587292006D23C0 /* onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onboarding.swift; sourceTree = "<group>"; };
+		B69C4BC71B58D7A200DF1F47 /* modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = modules.plist; sourceTree = "<group>"; };
 		B6BCF5351B517522000DB897 /* mvp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BCF5381B517522000DB897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6BCF53D1B517522000DB897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/onboarding.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				B6BCF5441B517522000DB897 /* Info.plist */,
 				B6BCF5381B517522000DB897 /* AppDelegate.swift */,
 				B699D1C01B587292006D23C0 /* onboarding.swift */,
+				B69C4BC71B58D7A200DF1F47 /* modules.plist */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				B699A8291B5787EE000A1102 /* config.plist in Resources */,
 				B6BCF5431B517522000DB897 /* LaunchScreen.storyboard in Resources */,
+				B69C4BC81B58D7A200DF1F47 /* modules.plist in Resources */,
 				B6BCF5401B517522000DB897 /* Assets.xcassets in Resources */,
 				B699A82B1B578988000A1102 /* login.storyboard in Resources */,
 				B6BCF53E1B517522000DB897 /* onboarding.storyboard in Resources */,
