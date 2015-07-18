@@ -8,12 +8,26 @@
 
 import UIKit
 
-class ui: UIViewController {
+class loginUI: UIViewController {
+    
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
+    @IBAction func loginAction(sender: UIButton) {
+        
+        login.setTitle("", forState: UIControlState.Normal)
+        activity.hidden = false
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+
     }
     
     override func didReceiveMemoryWarning() {
