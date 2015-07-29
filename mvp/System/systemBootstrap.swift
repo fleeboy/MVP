@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+// module config
+
+enum systemModules {
+    
+    case login
+    case signup
+    case main
+    case menu
+}

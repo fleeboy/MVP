@@ -8,6 +8,11 @@
 
 import UIKit
 
+/*
+ *
+ *
+ *
+*/
 class loginUI: UIViewController {
     
     @IBOutlet weak var label: UILabel!
@@ -18,7 +23,7 @@ class loginUI: UIViewController {
     
     @IBAction func loginAction(sender: UIButton) {
         
-        login.setTitle("", forState: UIControlState.Normal)
+        login.setTitle("", forState: .Normal)
         activity.hidden = false
         
     }

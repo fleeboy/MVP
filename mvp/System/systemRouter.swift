@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+// Routes config
+
+enum systemRoutes {
+    
+    
+}
